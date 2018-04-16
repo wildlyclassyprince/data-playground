@@ -6,3 +6,5 @@ A collection of Jupyter notebooks analysing open source data.
 2. arXiv Submissions & Downloads
 
 3. Backblaze Hard Drive Failure Rates
+
+4. Amazon Unlocked Phone Reviews
