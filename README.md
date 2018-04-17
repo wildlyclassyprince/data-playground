@@ -8,3 +8,5 @@ A collection of Jupyter notebooks analysing open source data.
 3. Backblaze Hard Drive Failure Rates
 
 4. Amazon Unlocked Phone Reviews
+
+5. Sample Data Analytics Notebook
