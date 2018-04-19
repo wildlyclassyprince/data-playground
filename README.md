@@ -10,3 +10,5 @@ A collection of Jupyter notebooks analysing open source data.
 4. Amazon Unlocked Phone Reviews
 
 5. Sample Data Analytics Notebook
+
+6. World Bank Group Finances
