@@ -12,3 +12,5 @@ A collection of Jupyter notebooks analysing open source data.
 5. Sample Data Analytics Notebook
 
 6. World Bank Group Finances
+
+7. Intro to lgo (Data Science in Go)
