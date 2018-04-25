@@ -1,16 +1,16 @@
 # data-playground
 A collection of Jupyter notebooks analysing open source data.
 
-1. Fifa18 Ultimate Team Data Analysis
+>- Fifa18 Ultimate Team Data Analysis
 
-2. arXiv Submissions & Downloads
+>- arXiv Submissions & Downloads
 
-3. Backblaze Hard Drive Failure Rates
+>- Backblaze Hard Drive Failure Rates
 
-4. Amazon Unlocked Phone Reviews
+>- Amazon Unlocked Phone Reviews
 
-5. Sample Data Analytics Notebook
+>- Sample Data Analytics Notebook
 
-6. World Bank Group Finances
+>- World Bank Group Finances
 
-7. Intro to lgo (Data Science in Go)
+>- Intro to lgo (Data Science in Go)
