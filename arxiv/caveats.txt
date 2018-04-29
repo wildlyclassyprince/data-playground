@@ -1,5 +1,5 @@
-While we have attempted to extract download data representing unique full-text downloads by real users,
-there are mnay factors which affect accuracy. These factors include:
+While we have attempted to extract download data representing unique full-text downloads by real users, there 
+are many factors which affect accuracy. These factors include:
     1. the data is from the main arXiv site and the arXiv mirrors, though some mirror data is incomplete;
     2. only web downloads are included (and not FTP or email "downloads" that were formerly supported);
     3. we have counted downloads according to the COUNTER algorithm which excludes rapid repeat downloads;
