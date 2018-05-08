@@ -1,5 +1,6 @@
-# data-playground
-A collection of Jupyter notebooks analysing open source data.
+# Data Playground
+
+A collection of Python and R Jupyter notebooks analysing open source data.
 
 >- Fifa18 Ultimate Team Data Analysis
 
@@ -12,5 +13,3 @@ A collection of Jupyter notebooks analysing open source data.
 >- Sample Data Analytics Notebook
 
 >- World Bank Group Finances
-
->- Intro to lgo (Data Science in Go)
