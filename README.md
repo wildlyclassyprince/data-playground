@@ -21,3 +21,5 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 >- Executing Cython Code
 
 >- Just-In-Time (JIT) Compilation
+
+>- Product Analytics Case Study: Telecommunications
