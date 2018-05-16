@@ -1,6 +1,6 @@
 # Data Playground
 
-A collection of Python and R Jupyter notebooks analysing open source data.
+A collection of Python (mostly) and R Jupyter notebooks analysing open source data.
 
 >- Fifa18 Ultimate Team Data Analysis
 
@@ -19,3 +19,5 @@ A collection of Python and R Jupyter notebooks analysing open source data.
 >- Data Visualizations
 
 >- Executing Cython Code
+
+>- Just-In-Time (JIT) Compilation
