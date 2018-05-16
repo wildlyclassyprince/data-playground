@@ -13,3 +13,5 @@ A collection of Python and R Jupyter notebooks analysing open source data.
 >- Sample Data Analytics Notebook
 
 >- World Bank Group Finances
+
+>- Cython for NumPy
