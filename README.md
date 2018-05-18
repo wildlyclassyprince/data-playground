@@ -14,6 +14,8 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 
 >- World Bank Group Finances
 
+>- World Bank Group Finances: Zimbabwe Analysis
+
 >- Cython for NumPy
 
 >- Data Visualizations
