@@ -25,3 +25,5 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 >- Just-In-Time (JIT) Compilation
 
 >- Product Analytics Case Study: Telecommunications
+
+>- Simple Classification
