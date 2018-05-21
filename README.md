@@ -26,4 +26,4 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 
 >- Product Analytics Case Study: Telecommunications
 
->- Simple Classification
+>- Simple Classification with `Sci-kit Learn`
