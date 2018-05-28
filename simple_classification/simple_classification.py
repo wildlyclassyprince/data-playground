@@ -3,9 +3,6 @@
 from __future__ import print_function
 
 # The usual suspects ...
-import numpy as np
-import graphviz
-
 # And the accomplices ...
 from IPython.display import Image
 from graphviz import Source
