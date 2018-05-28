@@ -3,12 +3,7 @@
 from __future__ import print_function
 
 # The usual suspects ...
-import numpy as np
-import graphviz
-
 # And the accomplices ...
-from IPython.display import Image
-from graphviz import Source
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
