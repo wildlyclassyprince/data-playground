@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
-from sklearn.ensemble import RandomforestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
 # Loading the data
@@ -18,7 +18,7 @@ iris = load_iris()
 X, y, features = iris.data, iris.target, iris.feature_names
 
 # Splitting the data
-X_train, X_test, y_train, y_test = train_test_test_split(X, y, test_size=.2, random_state=5, shuffle=True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.2, random_state=5, shuffle=True)
 
 # Training and testing
 for i in zip(['Decision Tree', 'K-Nearest Neighbor', 
