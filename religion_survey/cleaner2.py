@@ -112,6 +112,9 @@ def remove_columns(dataframe):
 
 # Frequency plot
 def frequency_plot(dataframe, x, title, xlabel, hue=None):
+	'''
+	Duel axis frequency plot with percentages.
+	'''
     # Plot settings
     plt.rcParams['figure.figsize'] = (16.0, 9.0)
     # Size of dataframe
