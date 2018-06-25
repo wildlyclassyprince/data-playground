@@ -22,3 +22,5 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Backblaze Hard Drive Failure Rates**<br>_Looking at hard drive failure data from [Backblaze](https://blackblaze.com)._|
 |**Amazon Unlocked Phone Reviews**<br>_Exploring sentiments from unlocked phones sold on Amazon._|
 |**When Does Praying In Public Make Others Uncomfortable?**<br>_Exploring the data behind the story [When does praying in public make others uncomfortable?](https://fivethirtyeight.com/features/when-does-praying-in-public-make-others-uncomfortable/). Survey was conducted from 29 July - 1 August 2016 and the data can be found in this [repo](https://github.com/wildlyclassyprince/data-playground/tree/master/religion_survey) or the original **fivethirtyeight** [repo](https://github.com/fivethirtyeight/data/tree/master/religion-survey)._|
+|**Trump Tweets**<br>_Exploring the data behind the story [The World’s Favorite Donald Trump Tweets](https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/).
+_|
