@@ -1,3 +1,5 @@
+Notice about the data posted on the arXiv website:
+
 While we have attempted to extract download data representing unique full-text downloads by real users, there 
 are many factors which affect accuracy. These factors include:
     1. the data is from the main arXiv site and the arXiv mirrors, though some mirror data is incomplete;
