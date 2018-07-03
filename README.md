@@ -9,7 +9,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Cython for NumPy**<br>_A introductory tutorial to writing efficient code in Python using the [Cython](https://github.com/python/cpython) implementation._|
 |**Executing Cython Code**<br>_Another tutorial for writing efficient code in Python using the [Cython](https://github.com/python/cpython) implementation._|
 |**Just-In-Time (JIT) Compilation**<br>_Let's talk about efficiency in Python._|
-|**Random Queries**<br>_Collection of my most frequently used SQL queries and SQL tutorial revisions and exercises._|
+|**Random Queries**<br>_Collection of my most frequently used SQL queries & SQL tutorial revisions and exercises._|
 
 |Data Playground|
 |---|
