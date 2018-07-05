@@ -63,6 +63,8 @@ def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', colo
     ax.set_title(title, fontsize=24)
     ax.set_ylabel(ylabel, fontsize=18)
     # Plotting
+    # To create error bars, use fill_between() with a nice fill color -> #3FD7D
+    # ax.fill_between() 
     ax.plot(data, color=color)
     if isinstance(data2, pd.Series):
         data2.replace([np.inf, np.NaN], 0, inplace=True)
