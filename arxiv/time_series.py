@@ -179,3 +179,18 @@ def test_stationarity(data):
         print(v)
     except NameError as n:
         print(n)
+
+# Sliding mean
+def sliding_mean(data, window=5):
+    '''Smoothing function for ease of plot readability.'''
+    data = array(data)
+    new_list = list()
+    for i in range(len(data)):
+        indices = range(max(i - window + 1, 0),
+                        min(i + window + 1, len(data)))
+        avg = 0
+        for j in indices:
+            avg += data[j]
+        avg /= float(len(indices))
+        new_list.append(avg)
+    return array(new_list)
