@@ -185,7 +185,7 @@ def test_stationarity(data):
 # Sliding mean
 def sliding_mean(data, window=5):
     '''Smoothing function for ease of plot readability.'''
-    data = array(data)
+    data = np.array(data)
     new_list = list()
     for i in range(len(data)):
         indices = range(max(i - window + 1, 0),
@@ -195,4 +195,4 @@ def sliding_mean(data, window=5):
             avg += data[j]
         avg /= float(len(indices))
         new_list.append(avg)
-    return array(new_list)
+    return np.array(new_list)
