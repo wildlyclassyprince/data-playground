@@ -21,7 +21,7 @@ def some_function(some_variable):
     return some_thing
 ```
 
-Using `pyximport`:
+Using `pyximport` to import Cython programs directly:
 
 ```python
 import pyximport
