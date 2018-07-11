@@ -17,12 +17,18 @@ To enable support for Cython compilation in IPython:
 
 %%cython_inline --annotate
 
+# Define our function
 def some_function(some_variable):
+    '''Our functions that does something cool.'''
     return some_thing
 ```
 
 Using `pyximport` to import Cython programs directly:
 
 ```python
+# Loading ...
 import pyximport
+
+# Initializing ...
+pyximport.install()
 ```
