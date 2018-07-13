@@ -10,7 +10,7 @@ Creating a stored procedure
 */
 CREATE PROCEDURE procedure_name
 AS 
-sql_statement
+SELECT * FROM table_name
 GO;
 
 /*
