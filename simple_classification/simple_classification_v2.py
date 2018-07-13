@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
+# This is the shorter and dense version of the script.
+
 from __future__ import print_function
 
 # The usual suspects ...
-# And the accomplices ...
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_graphviz

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
+# This is the longer and repetetive version of the script.
+
 from __future__ import print_function
 
 # The usual suspects ...
-# And the accomplices ...
 from IPython.display import Image
 from graphviz import Source
 from sklearn.datasets import load_iris
