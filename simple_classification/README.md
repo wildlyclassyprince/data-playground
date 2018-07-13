@@ -1,6 +1,6 @@
 # Simple Classification
 
-In this repository, we demonstrate the simplicity involved with classifying data using Pyton's `sci-kit learn` library.
+In this repository, we demonstrate the simplicity involved with classifying data using Python's `sci-kit learn` library.
 
 We train on the *Iris* dataset and classify using the following algorithms:
 
