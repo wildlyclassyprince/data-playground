@@ -10,6 +10,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Executing Cython Code**<br>_Another tutorial for writing efficient code in Python using the [Cython](https://github.com/python/cpython) implementation._|
 |**Just-In-Time (JIT) Compilation**<br>_Let's talk about efficiency in Python._|
 |**Random Queries**<br>_Collection of my most frequently used SQL queries & SQL tutorial revisions and exercises._|
+|**Regression Analysis**<br>_An exploration of the different types of regression analysis. We also dive into the different estimation methods, comparing & contrasting the different approaches & uses in practice._|
 
 |Data Playground|
 |---|
