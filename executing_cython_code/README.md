@@ -19,7 +19,7 @@ To enable support for Cython compilation in IPython:
 
 # Define our function
 def some_function(some_variable):
-    '''Our functions that does something cool.'''
+    '''Our function that does something cool.'''
     return some_thing
 ```
 
