@@ -10,10 +10,10 @@ A snapshot of each operational hard drive is taken each day at Backblaze's data 
 
 The first raw of each file contains the column names, the remaining rows are the actual data. The columns are as follows:
 
->- **Date** - the date of the file in `yyyy-mm-dd` format.
+>- **Date** - the date of the file in `YYYY-MM-DD` format.
 >- **Serial Number** - the manufacturer-assigned serial number of the drive.
 >- **Model** - the manufacturer-assigned model number of the drive.
 >- **Capacity** - the drive capacity in bytes.
->- **Failure** - contains a "0" if the drive is OK. Contains a "1" if this is the day the drive was operational before failling.
+>- **Failure** - contains a `0` if the drive is OK. Contains a `1` if this is the day the drive was operational before failling.
 >- **2013-2014 SMART Stats** - 80 columns of data, that are the Raw and Normalized values of 40 different SMART stats as reported by the given drive. Each value is the number reported by the drive.
 - **2015 SMART Stats** - 90 columns of data, that are the Raw and Normalized values of 45 different SMART stats as reported by the given drive. Each value is the number reported on the drive.
