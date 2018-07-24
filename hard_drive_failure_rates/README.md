@@ -16,4 +16,4 @@ The first raw of each file contains the column names, the remaining rows are the
 >- **Capacity** - the drive capacity in bytes.
 >- **Failure** - contains a `0` if the drive is OK. Contains a `1` if this is the day the drive was operational before failling.
 >- **2013-2014 SMART Stats** - 80 columns of data, that are the Raw and Normalized values of 40 different SMART stats as reported by the given drive. Each value is the number reported by the drive.
-- **2015 SMART Stats** - 90 columns of data, that are the Raw and Normalized values of 45 different SMART stats as reported by the given drive. Each value is the number reported on the drive.
+>- **2015 SMART Stats** - 90 columns of data, that are the Raw and Normalized values of 45 different SMART stats as reported by the given drive. Each value is the number reported on the drive.
