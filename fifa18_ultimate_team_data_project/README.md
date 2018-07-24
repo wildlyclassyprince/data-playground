@@ -1,4 +1,4 @@
-# Analysis of Fifa !8 Ultimate Team Players' Data
+# Analysis of Fifa 18 Ultimate Team Players' Data
 
 Data forked from [here](https://github.com/kafagy95/fifa18-Data) with the following description:
 
