@@ -11,6 +11,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Just-In-Time (JIT) Compilation**<br>_Let's talk about efficiency in Python._|
 |**Random Queries**<br>_Collection of my most frequently used SQL queries & SQL tutorial revisions and exercises._|
 |**Regression Analysis**<br>_An exploration of the different types of regression analysis. We also dive into the different estimation methods, comparing & contrasting the different approaches, as well as uses in practice._|
+|*Basics of Cython*<br>_An introduction to writing optimized Python code with minimal effort. This repo also shows the inter-play between C and Python with an easy to use API._|
 
 |Data Playground|
 |---|
