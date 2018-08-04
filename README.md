@@ -12,7 +12,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Random Queries**<br>_Collection of my most frequently used SQL queries & SQL tutorial revisions and exercises._|
 |**Regression Analysis**<br>_An exploration of the different types of regression analysis. We also dive into the different estimation methods, comparing & contrasting the different approaches, as well as uses in practice._|
 |**Basics of Cython**<br>_An introduction to writing optimized Python code with minimal effort. This repo also shows the inter-play between C and Python with an easy to use API._|
-|**Py-Mongo**<br>_An introduction, tutorial and collection of scripts for working with MongoDB in Python._|
+|**Py-Mongo**<br>_An introductory tutorial with a collection of scripts for working with MongoDB in Python._|
 
 |Data Playground|
 |---|
