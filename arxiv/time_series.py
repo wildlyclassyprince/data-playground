@@ -83,6 +83,8 @@ def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color
         data.replace([np.inf, np.NaN], 0, inplace=True)
     elif isinstance(data2, pd.Series):
         data2.replace([np.inf, np.NaN], 0, inplace=True)
+    elif isinstance(data3, pd.Series):
+        data3.replace([np.inf, np.NaN], 0, inplace=True)
     else:
         raise AttributeError
     # Size of the plot
