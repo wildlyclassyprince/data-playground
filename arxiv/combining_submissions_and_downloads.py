@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# arXiv Monthly Submissions & Downloads
+'''
+arXiv Monthly Submissions & Downloads
+-------------------------------------
+
+This script takes the submissions and downloads files, and
+merges (right-join) them into a single file by pivoting on 
+the month (i.e., the date corresponding to the number of 
+submissions or downloads on that month).
+'''
 
 # The usual suspects ...
 import pandas as pd
