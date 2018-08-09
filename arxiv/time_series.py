@@ -1,5 +1,27 @@
 # -*- coding: utf-8 -*-
 
+'''
+Introduction
+------------
+This script contains all the time series related boiler-plate code.
+
+Aim
+---
+The aim of this file is to facilitate a reusable time series analysis data science pipeline:
+    - starting from processing the data for analysis
+    - exploring and cleaning the data
+    - creating series objects using Pandas
+    - plotting customized charts and graphs
+    - carrying out analysis, e.g., testing for stationarity
+    
+Comments
+--------
+There a couple of improvements that can be added:
+    - the 'create_series' function is memory-intensive and will need to be optimized
+    - the 'plot_series' function does not encapsulate use cases well. Need to make it more
+      object oriented and capitalize on inheritance features.
+'''
+
 # The usual suspects ...
 import contextlib
 import statsmodels
