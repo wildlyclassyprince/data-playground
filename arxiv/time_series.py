@@ -76,7 +76,7 @@ def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', colo
         pass
 
 # Plotting predictions
-def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color2='green', color3='purple'):
+def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color2='green', color3='purple', l1='Actual', l2='Predicted', l3='Predicted 2'):
     '''Plotting a time series object.'''
     # Input type, missing values & Infinity
     if isinstance(data, pd.Series):
@@ -114,11 +114,11 @@ def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color
     ax.set_title(title, fontsize=24)
     ax.set_ylabel(ylabel, fontsize=18)
     # Plotting
-    ax.plot(data, color=color, label='Actual')
-    ax.plot(data2, color=color2, label='Predicted')
+    ax.plot(data, color=color, label=l1)
+    ax.plot(data2, color=color2, label=l2)
     if isinstance(data3, pd.Series):
         data3.replace([np.inf, np.NaN], 0, inplace=True)
-        ax.plot(data3, color=color3)
+        ax.plot(data3, color=color3, label=l3)
     else:
         pass
     # Legend
