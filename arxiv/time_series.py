@@ -20,6 +20,7 @@ There a couple of improvements that can be added:
     - the 'create_series' function is memory-intensive and will need to be optimized
     - the 'plot_series' function does not encapsulate use cases well. Need to make it more
       object oriented and capitalize on inheritance features.
+    - test scripts need to be written.
 '''
 
 # The usual suspects ...
