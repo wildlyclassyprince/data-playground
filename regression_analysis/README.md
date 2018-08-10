@@ -15,3 +15,13 @@ In this repo we take a look at the different types of regression and how they ca
   5. **Logistic Regression**
   
 This repo was inspired by the section **Part II: Early Computer-Age Methods**, in the book **CASI: Computer Age Statistical Inference**, and make reference to the book.
+
+## To-Do
+
+- [ ] Description for Bayesian Linear Regression.
+- [ ] Description for Logistic Regression.
+- [ ] Summary remarks.
+- [ ] Scatter plot(s).
+- [ ] Regression plot(s) where possible.
+- [ ] Script for all models.
+- [ ] Tests for the the script.
