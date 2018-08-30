@@ -13,7 +13,7 @@ The aim of this file is to facilitate a reusable time series analysis data scien
     - creating series objects using Pandas
     - plotting customized charts and graphs
     - carrying out analysis, e.g., testing for stationarity
-    
+
 Comments
 --------
 There a couple of improvements that can be added:
@@ -24,16 +24,16 @@ There a couple of improvements that can be added:
 '''
 
 # The usual suspects ...
-import contextlib
-import statsmodels
+#import contextlib
+#import statsmodels
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 # And their accomplices ...
-from statsmodels.tsa.stattools import adfuller, acf, pacf
-from statsmodels.tsa.seasonal import seasonal_decompose
-from statsmodels.tsa.arima_model import ARIMA
+#from statsmodels.tsa.stattools import adfuller, acf, pacf
+#from statsmodels.tsa.seasonal import seasonal_decompose
+#from statsmodels.tsa.arima_model import ARIMA
 
 # Converting to datetime
 def convert_to_datetime(data, column):
@@ -50,7 +50,8 @@ def create_series(data, time_column, category_column):
     return data.set_index(time_column)[category_column]
 
 # Plotting a time series object
-def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', color2='red', color3='green'):
+def plot_series(data, title, ylabel,
+                data2=None, data3=None, color='blue', color2='red', color3='green'):
     '''Plotting a time series object.'''
     # Input type, missing values & Infinity
     if isinstance(data, pd.Series):
@@ -87,7 +88,7 @@ def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', colo
     ax.set_ylabel(ylabel, fontsize=18)
     # Plotting
     # To create error bars, use fill_between() with a nice fill color -> #3FD7D
-    # ax.fill_between() 
+    # ax.fill_between()
     ax.plot(data, color=color)
     if isinstance(data2, pd.Series):
         data2.replace([np.inf, np.NaN], 0, inplace=True)
@@ -99,7 +100,9 @@ def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', colo
         pass
 
 # Plotting predictions
-def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color2='green', color3='purple', l1='Actual', l2='Predicted', l3='Predicted 2'):
+def plot_predictions(data, data2, title, ylabel, data3=None,
+                     color='blue', color2='green', color3='purple',
+                     l1='Actual', l2='Predicted', l3='Predicted 2'):
     '''Plotting a time series object.'''
     # Input type, missing values & Infinity
     if isinstance(data, pd.Series):
@@ -188,7 +191,7 @@ def test_stationarity(data):
     ax.legend(loc='best', fontsize='x-large')
     ax.set_title('Rolling Statistics', fontsize=24)
     plt.show(block=True)
-    
+
     # Perform Dickey-Fuller Test:
     print('Results of Dickey-Fuller Test:')
     try:
