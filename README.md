@@ -13,7 +13,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Regression Analysis**<br>_An exploration of the different types of regression analysis. We also dive into the different estimation methods, comparing & contrasting the different approaches, as well as uses in practice._|
 |**Basics of Cython**<br>_An introduction to writing optimized Python code with minimal effort. This repo also shows the inter-play between C and Python with an easy to use API._|
 |**Py-Mongo**<br>_An introductory tutorial with a collection of scripts for working with MongoDB in Python._|
-|**Performance Comparison: Pure Python vs. NumPy vs. TensorFlow**<br>_Python has several libraries make use of its ease of use while lending the ability to perform numerical computations efficiently. The purpose of this tutorial is to explore the improvements that can be achieved by using NumPy and/or TensorFlow._|
+|**Performance Comparison: Pure Python vs. NumPy vs. TensorFlow**<br>_Python has several libraries make use of its ease of use while lending the ability to perform numerical computations efficiently. The purpose of this tutorial is to explore the improvements that can be achieved by using [NumPy](http://numpy.org) and/or [TensorFlow](https://tensorflow.org)._|
 
 |Data Playground|
 |---|
