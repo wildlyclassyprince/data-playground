@@ -14,6 +14,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Basics of Cython**<br>_An introduction to writing optimized Python code with minimal effort. This repo also shows the inter-play between C and Python with an easy to use API._|
 |**Py-Mongo**<br>_An introductory tutorial with a collection of scripts for working with MongoDB in Python._|
 |**Performance Comparison: Pure Python vs. NumPy vs. TensorFlow**<br>_Python has several libraries make use of its ease of use while lending the ability to perform numerical computations efficiently. The purpose of this tutorial is to explore the improvements that can be achieved by using [NumPy](http://numpy.org) and/or [TensorFlow](https://tensorflow.org)._|
+|**Parallel Programming in Python**<br>_How does parallel programming in Python work? How do we do it? We'll use the `multiprocessing` module to demonstrate how we can carry out parallel programming in Python and how to analyse large datasets by using all out cores._|
 
 |Data Playground|
 |---|
