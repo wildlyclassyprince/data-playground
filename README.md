@@ -15,7 +15,6 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Py-Mongo**<br>_An introductory tutorial with a collection of scripts for working with MongoDB in Python._|
 |**Performance Comparison: Pure Python vs. NumPy vs. TensorFlow**<br>_Python has several libraries make use of its ease of use while lending the ability to perform numerical computations efficiently. The purpose of this tutorial is to explore the improvements that can be achieved by using [NumPy](http://numpy.org) and/or [TensorFlow](https://tensorflow.org)._|
 |**Parallel Programming in Python**<br>_How does parallel programming in Python work? How do we do it? We'll use the `multiprocessing` module to demonstrate how we can carry out parallel programming in Python and how to analyse large datasets by using all of our machine cores._|
-|**Tweets Predictor**<br>_Building a resuable machine learning pipeline that can predict the author of a particular sentiment._|
 
 |Data Playground|
 |---|
@@ -31,3 +30,4 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**When Does Praying In Public Make Others Uncomfortable?**<br>_Exploring the data behind the story [When does praying in public make others uncomfortable?](https://fivethirtyeight.com/features/when-does-praying-in-public-make-others-uncomfortable/). Survey was conducted from 29 July - 1 August 2016 and the data can be found in this [repo](https://github.com/wildlyclassyprince/data-playground/tree/master/religion_survey) or the original **fivethirtyeight** [repo](https://github.com/fivethirtyeight/data/tree/master/religion-survey)._|
 |**Trump Tweets**<br>_Exploring the data behind the story [The World’s Favorite Donald Trump Tweets](https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/)._|
 |**Twitter Ratio**<br>_An in-depth look at the data behind the story [The Worst Tweeter In Politics Isn't Trump](https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/). We look at the topics of interest based on sentiments shared by U.S. senators, the 44th U.S. President, [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama) and the 45th President, [Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump) on [Twitter](https://twitter.com)._|
+|**Tweets Predictor**<br>_Building a resuable machine learning pipeline that can predict the author of a particular sentiment. We also make use of `Dask`, a Python module for reproducing and deploying machine learning models at scale._|
