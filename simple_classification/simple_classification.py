@@ -52,4 +52,5 @@ print('Neural Network Accuracy Score: {}'.format(accuracy_score(y_test, y_pred))
 # 4. Random Forest
 clf = RandomForestClassifier()
 clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
 print('Random Forest Accuracy Score: {}'.format(accuracy_score(y_test, y_pred)))
