@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import seaborn as sns
 
+from textblob import TextBlob
+
 # Information
 __author__ = "wildlyclassyprince"
-__version__ = "$Revision: 0.1.1 $"
-__date__ = "$Date: Wed Jun 13 15:50:36 CAT 2018 $"
 __licence__ = "GNU"
 
 # Value counts
@@ -151,3 +151,37 @@ def frequency_plot(dataframe, x, title, xlabel, hue=None):
     ax2.yaxis.set_major_locator(ticker.MultipleLocator(10))
     # Grid lines
     ax2.grid(None)
+
+# Deriving the sentiment
+def derive_sentiment(dataframe, column):
+    '''Derives the sentimental attributes of text.'''
+    Bias, Sentiment, Polarity, Subjectivity = list(), list(), list(), list()
+    for i in range(len(dataframe[column])):
+        polarity, subjectivity = TextBlob(dataframe[column][i]).sentiment
+        # Assigning the bias
+        if subjectivity < 0:
+            bias = 'Left Bias'
+        elif subjectivity == 0:
+            bias = 'No Bias'
+        elif subjectivity > 0:
+            bias = 'Right Bias'
+    
+        # Assigning the Sentiment
+        if polarity < 0:
+            sentiment = 'Negative'
+        elif polarity == 0:
+            sentiment = 'Neutral'
+        elif polarity > 0:
+            sentiment = 'Positive'
+    
+        # Saving output
+        Bias.append(bias)
+        Sentiment.append(sentiment)
+        Polarity.append(polarity)
+        Subjectivity.append(subjectivity)
+    
+    # Adding the features
+    dataframe['Bias'] = Bias
+    dataframe['Sentiment'] = Sentiment
+    dataframe['Polarity'] = Polarity
+    dataframe['Subjectivity'] = Subjectivity
