@@ -24,7 +24,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Product Analytics Case Study: Telecommunications**<br>_Analysing the product data from a telecommunications company._|
 |**Simple Classification with** `Sci-kit Learn`<br>_An introductory script illustrating the ease of carrying our a classification task with Python's [`Sci-kit Learn`](https://scikit-learn.org)._|
 |**Fifa18 Ultimate Team Data Analysis**<br>_Analysing fantasy football stats._|
-|**arXiv Submissions & Downloads**<br>_Simulating time series for [arXiv](https://arxiv.org) submissions and downloads._|
+|**arXiv Submissions & Downloads**<br>_Simulating time series for [arXiv](https://arxiv.org) submissions and downloads. Includes a second Jupyter notebook which explores the spatial aspect of the submissions and downloads._|
 |**Backblaze Hard Drive Failure Rates**<br>_Looking at hard drive failure data from [Backblaze](https://blackblaze.com)._|
 |**Amazon Unlocked Phone Reviews**<br>_Exploring sentiments from unlocked phones sold on Amazon._|
 |**When Does Praying In Public Make Others Uncomfortable?**<br>_Exploring the data behind the story [When does praying in public make others uncomfortable?](https://fivethirtyeight.com/features/when-does-praying-in-public-make-others-uncomfortable/). Survey was conducted from 29 July - 1 August 2016 and the data can be found in this [repo](https://github.com/wildlyclassyprince/data-playground/tree/master/religion_survey) or the original **fivethirtyeight** [repo](https://github.com/fivethirtyeight/data/tree/master/religion-survey)._|
