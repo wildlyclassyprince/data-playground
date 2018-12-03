@@ -2,7 +2,7 @@
 
 A collection of Python (mostly) and R Jupyter notebooks analysing open source data and tutorials.
 
-|Data Tutorials|
+|Analytics Tutorials|
 |---|
 |**Sample Data Analytics Notebook**<br>_A sample of how to structure a data analytics project on [Jupyter](https://jupyter.org) notebooks._|
 |**Data Visualizations**<br>_A toy notebook for plotting data using [seaborn](https://seaborn.pydata.org/) and [matplotlib](https://matplotlib.org)._|
@@ -15,6 +15,7 @@ A collection of Python (mostly) and R Jupyter notebooks analysing open source da
 |**Py-Mongo**<br>_An introductory tutorial with a collection of scripts for working with MongoDB in Python._|
 |**Performance Comparison: Pure Python vs. NumPy vs. TensorFlow**<br>_Python has several libraries make use of its ease of use while lending the ability to perform numerical computations efficiently. The purpose of this tutorial is to explore the improvements that can be achieved by using [NumPy](http://numpy.org) and/or [TensorFlow](https://tensorflow.org)._|
 |**Parallel Programming in Python**<br>_How does parallel programming in Python work? How do we do it? We'll use the `multiprocessing` module to demonstrate how we can carry out parallel programming in Python and how to analyse large datasets by using all of our machine cores._|
+|**Bayesian Inference in Practice**<br>Gaining a deeper understanding of Bayesian inference through complete (end-to-end) data analytics projects.<br>|
 
 |Data Playground|
 |---|
