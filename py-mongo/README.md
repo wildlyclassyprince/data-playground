@@ -1,5 +1,4 @@
 # Py-Mongo
 
-Working with MongoDB in Python.
 
-An introduction, tutorial and collection of scripts.
+An introduction, tutorial and collection of scripts for working with Py-Mongo.
