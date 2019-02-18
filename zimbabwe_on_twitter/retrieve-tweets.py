@@ -60,7 +60,7 @@ def limit_handler(cursor):
             break
 
 # Query and insertion function
-def search_retrieve_insert(query, number=100):
+def search_retrieve_insert(query):
     '''Inserts data into the database.'''
     try:
         # Get the data but pause when limit is reached ...
@@ -96,4 +96,4 @@ def read():
 
 if __name__ == "__main__":
     # Query and insert
-    search_retrieve_insert(query='Zimbabwe', number=10000)
+    search_retrieve_insert(query='Zimbabwe')
