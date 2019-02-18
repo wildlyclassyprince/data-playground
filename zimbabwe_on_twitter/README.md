@@ -12,10 +12,12 @@ This project aims at providing some analysis into Twitter content related to Zim
 
 ## To Do
 
-- [ ] Retrieve tweets.
+- [x] Retrieve tweets by searching for words and phrases associated with the term of interest.
 
-- [ ] Store tweets.
+- [x] Store tweets in database for ease of access and reference.
 
 - [ ] Transform and clean the data collected.
 
 - [ ] Plot data on a dashboard.
+
+- [ ] Test scripts.
