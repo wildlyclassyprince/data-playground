@@ -63,15 +63,16 @@ def limit_handler(cursor):
 def search_retrieve_insert(query, number=100):
     '''Inserts data into the database.'''
     try:
-        # Get the data
-        for tweet in limit_handler(tweepy.Cursor(api.search)).items(number):
+        # Get the data but pause when limit is reached ...
+        # Remove .items(number) to return all possible query results
+        for tweet in limit_handler(tweepy.Cursor(api.search, query).items()):
             # Insert data
             db.TweetDetails.insert_one({
                 'id': id_gen(),
                 'query': query,
                 'text': tweet.text,
                 'created_at': tweet.created_at,
-                'full_name': tweet.author.name,
+                'full_name' : tweet.author.name,
                 'screen_name': tweet.author.screen_name,
                 'location': tweet.author.location,
                 'description': tweet.author.description,
