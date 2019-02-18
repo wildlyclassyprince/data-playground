@@ -1,4 +1,4 @@
-# A dive into tweets about Zimbabwe
+# A dashboard overview of tweets related to Zimbabwe
 
 This project aims at providing some analysis into Twitter content related to Zimbabwe.
 

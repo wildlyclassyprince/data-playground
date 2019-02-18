@@ -16,4 +16,5 @@ A portfolio of data science projects analysing open source data.
 |**Trump Tweets**<br>_Exploring the data behind the story [The World’s Favorite Donald Trump Tweets](https://fivethirtyeight.com/features/the-worlds-favorite-donald-trump-tweets/)._|
 |**Twitter Ratio**<br>_An in-depth look at the data behind the story [The Worst Tweeter In Politics Isn't Trump](https://fivethirtyeight.com/features/the-worst-tweeter-in-politics-isnt-trump/). We look at the topics of interest based on sentiments shared by U.S. senators, the 44th U.S. President, [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama) and the 45th President, [Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump) on [Twitter](https://twitter.com)._|
 |**Tweets Predictor**<br>_Building a resuable machine learning pipeline that can predict the author of a particular sentiment. We also make use of `Dask`, a Python module for scaling machine learning models._|
-|**Bayesian Inference in Practice**<br>Gaining a deeper understanding of Bayesian inference through complete (end-to-end) data analytics projects.<br>|
+|**Bayesian Inference in Practice**<br>_Gaining a deeper understanding of Bayesian inference through complete (end-to-end) data analytics projects._|
+|**Zimbabwe on Twitter**<br>_A dashboard overview of tweets related to Zimbabwe._|
