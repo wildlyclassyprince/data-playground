@@ -210,32 +210,27 @@ def sliding_mean(data, window=5):
 def plot_acf_and_pacf(time_series_data, acf_data, pacf_data):
     '''Plots ACF & PACF.'''
     f, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 6))
-    plt.plot(acf_data, ax=ax1)
-    plt.plot(pacf_data, ax=ax2)
+    ax1.plot(acf_data)
+    ax2.plot(pacf_data)
     ax1.set_title('Auto-correlation Function', fontsize=16)
     ax2.set_title('Partial Auto-correlation Function', fontsize=16)
+    ax1.axhline(y=0, linestyle='--', color='gray')
     ax1.axhline(y=-1.96/np.sqrt(len(time_series_data)), linestyle='--', color='gray')
+    ax1.axhline(y=1.96/np.sqrt(len(time_series_data)), linestyle='--', color='gray')
+    ax2.axhline(y=0, linestyle='--', color='gray')
     ax2.axhline(y=-1.96/np.sqrt(len(time_series_data)), linestyle='--', color='gray')
+    ax2.axhline(y=1.96/np.sqrt(len(time_series_data)), linestyle='--', color='gray')
     plt.tight_layout()
-    
-# Removing the rolling mean
-def remove_rolling_mean(data, window=12):
-    '''Removes rolling mean from time series data.'''
-    diff = data - data.rolling(window=window, center=False).mean().dropna()
-    return diff.dropna(inplace=True)
-
-# Removing the exponentially weighted mean
-def remove_exp_weighted_mean(data, halflife=12):
-    '''Removes the exponentially weighted mean from the time series data.'''
-    diff = data - data.ewm(halflife=halflife).mean()
-    return dropna(inplace=True)
 
 # Decomposing
 def decompose(data):
     '''Seasonality decomposition.'''
     decomposition = seasonal_decompose(data)
-    seasonality, trend, residuals = decomposition.seasonal, decomposition.trend, decomposition.resid
-    # Plotting
+    return decomposition.seasonal, decomposition.trend, decomposition.resid
+
+# Plot decomposition
+def plot_decomposition(data, seasonality, trend, residuals):
+    '''Plots time series decomposition.'''
     f, (ax1, ax2, ax3, ax4) = plt.subplots(4, 1, figsize=(15, 20))
     ax1.plot(data)
     ax1.set_title('Original', fontsize=16)
