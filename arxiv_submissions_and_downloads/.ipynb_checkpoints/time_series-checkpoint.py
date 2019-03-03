@@ -13,7 +13,7 @@ The aim of this file is to facilitate a reusable time series analysis data scien
     - creating series objects using Pandas
     - plotting customized charts and graphs
     - carrying out analysis, e.g., testing for stationarity
-    
+
 Comments
 --------
 There a couple of improvements that can be added:
@@ -24,14 +24,16 @@ There a couple of improvements that can be added:
 '''
 
 # The usual suspects ...
-import contextlib
-import statsmodels
+#import contextlib
+#import statsmodels
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 # And their accomplices ...
-from statsmodels.tsa.stattools import adfuller, acf, pacf
+from statsmodels.tsa.stattools import adfuller
+from statsmodels.tsa.stattools import acf
+from statsmodels.tsa.stattools import acf
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima_model import ARIMA
 
@@ -43,14 +45,15 @@ def convert_to_datetime(data, column):
                                   exact=False)
 
 # Creating a time series object
-
-
 def create_series(data, time_column, category_column):
     '''Create a time series object.'''
     return data.set_index(time_column)[category_column]
 
 # Plotting a time series object
-def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', color2='red', color3='green'):
+def plot_series(data, title, ylabel,
+                data2=None, data3=None,
+                color='blue', color2='red',
+                color3='green'):
     '''Plotting a time series object.'''
     # Input type, missing values & Infinity
     if isinstance(data, pd.Series):
@@ -87,7 +90,7 @@ def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', colo
     ax.set_ylabel(ylabel, fontsize=18)
     # Plotting
     # To create error bars, use fill_between() with a nice fill color -> #3FD7D
-    # ax.fill_between() 
+    # ax.fill_between()
     ax.plot(data, color=color)
     if isinstance(data2, pd.Series):
         data2.replace([np.inf, np.NaN], 0, inplace=True)
@@ -99,7 +102,9 @@ def plot_series(data,  title, ylabel, data2=None, data3=None, color='blue', colo
         pass
 
 # Plotting predictions
-def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color2='green', color3='purple', l1='Actual', l2='Predicted', l3='Predicted 2'):
+def plot_predictions(data, data2, title, ylabel, data3=None,
+                     color='blue', color2='green', color3='purple',
+                     l1='Actual', l2='Predicted', l3='Predicted 2'):
     '''Plotting a time series object.'''
     # Input type, missing values & Infinity
     if isinstance(data, pd.Series):
@@ -120,14 +125,6 @@ def plot_predictions(data, data2, title, ylabel, data3=None, color='blue', color
     ax.get_xaxis().tick_bottom()
     ax.get_yaxis().tick_left()
     ax.tick_params(axis='both', size=14)
-    # Limiting the plot-range
-    #ax.set_xlim(data.index.min(), data.index.max())
-    #ax.set_ylim(data.values.min(), data.values.max())
-    # Trace lines
-    #for i in range(int(data.values.min()+data.values.max()/2), int(data.values.max()+1)):
-    #    plt.plot(range(data.index.year.min(), data.index.year.max()),
-    #             [i]*len(range(data.index.year.min(), data.index.year.max())),
-    #             '--', lw=.5, color='grey', alpha=.3)
     # Removing tick marks
     ax.tick_params(axis='both', which='both',
                    bottom=False, top=False,
@@ -166,21 +163,11 @@ def test_stationarity(data):
     # Axes ticks
     ax.get_xaxis().tick_bottom()
     ax.get_yaxis().tick_left()
-    # Limiting the plot-range
-    #ax.set_xlim(data.index.min(), data.index.max())
-    #ax.set_ylim(data.values.min(), data.values.max())
-    # Trace lines
-    #for i in range(int(data.values.min()+data.values.max()/2), int(data.values.max()+1)):
-    #    plt.plot(range(data.index.year.min(), data.index.year.max()),
-    #             [i]*len(range(data.index.year.min(), data.index.year.max())),
-    #             '--', lw=.5, color='grey', alpha=.3)
     # Removing tick marks
     ax.tick_params(axis='both', which='both',
                    bottom=False, top=False,
                    labelbottom=True, labelleft=True,
                    left=False, right=False)
-    # Plot labels
-    #ax.set_ylabel('Frequency', fontsize=16)
     # Plotting
     ax.plot(data, color='blue', label='Original')
     ax.plot(rol_mean, color='green', label='Rolling Mean')
@@ -188,7 +175,6 @@ def test_stationarity(data):
     ax.legend(loc='best', fontsize='x-large')
     ax.set_title('Rolling Statistics', fontsize=24)
     plt.show(block=True)
-    
     # Perform Dickey-Fuller Test:
     print('Results of Dickey-Fuller Test:')
     try:
@@ -219,3 +205,44 @@ def sliding_mean(data, window=5):
         avg /= float(len(indices))
         new_list.append(avg)
     return np.array(new_list)
+
+# Plotting ACF
+def plot_acf_and_pacf(time_series_data, acf_data, pacf_data):
+    '''Plots ACF & PACF.'''
+    f, (ax1, ax2) = plt.subplots(1, 2, figsize=(20, 6))
+    plt.plot(acf_data, ax=ax1)
+    plt.plot(pacf_data, ax=ax2)
+    ax1.set_title('Auto-correlation Function', fontsize=16)
+    ax2.set_title('Partial Auto-correlation Function', fontsize=16)
+    ax1.axhline(y=-1.96/np.sqrt(len(time_series_data)), linestyle='--', color='gray')
+    ax2.axhline(y=-1.96/np.sqrt(len(time_series_data)), linestyle='--', color='gray')
+    plt.tight_layout()
+    
+# Removing the rolling mean
+def remove_rolling_mean(data, window=12):
+    '''Removes rolling mean from time series data.'''
+    diff = data - data.rolling(window=window, center=False).mean().dropna()
+    return diff.dropna(inplace=True)
+
+# Removing the exponentially weighted mean
+def remove_exp_weighted_mean(data, halflife=12):
+    '''Removes the exponentially weighted mean from the time series data.'''
+    diff = data - data.ewm(halflife=halflife).mean()
+    return dropna(inplace=True)
+
+# Decomposing
+def decompose(data):
+    '''Seasonality decomposition.'''
+    decomposition = seasonal_decompose(data)
+    seasonality, trend, residuals = decomposition.seasonal, decomposition.trend, decomposition.resid
+    # Plotting
+    f, (ax1, ax2, ax3, ax4) = plt.subplots(4, 1, figsize=(15, 20))
+    ax1.plot(data)
+    ax1.set_title('Original', fontsize=16)
+    ax2.plot(trend)
+    ax2.set_title('Trend', fontsize=16)
+    ax3.plot(seasonality)
+    ax3.set_title('Seasonality', fontsize=16)
+    ax4.plot(residuals)
+    ax4.set_title('Residuals', fontsize=16)
+    plt.tight_layout()
