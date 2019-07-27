@@ -123,8 +123,8 @@ def load():
         if conn:
             cursor.close()
             conn.close()
-except (Exception, psycopg2.error) as error:
-    print(f'Failed to insert record {cursor.rowcount}: {error}')
+    except (Exception, psycopg2.error) as error:
+        print(f'Failed to insert record {cursor.rowcount}: {error}')
         
         
 
