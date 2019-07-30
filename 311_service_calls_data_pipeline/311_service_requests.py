@@ -105,7 +105,7 @@ def load():
     
     # Credentials
     with open('config/postgresql-credentials.json') as creds:
-        credentials = load(creds)
+        credentials = json.load(creds)
         
     try:
         # Connect to DB
@@ -123,7 +123,7 @@ def load():
         if conn:
             cursor.close()
             conn.close()
-    except (Exception, psycopg2.error) as error:
+    except Exception as error:
         print(f'Failed to insert record {cursor.rowcount}: {error}')
         
         
