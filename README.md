@@ -18,3 +18,4 @@ A portfolio of data science projects analysing open source data.
 |**Tweets Predictor**<br>_Building a resuable machine learning pipeline that can predict the author of a particular sentiment. We also make use of `Dask`, a Python module for scaling machine learning models._|
 |**Bayesian Inference in Practice**<br>_Gaining a deeper understanding of Bayesian inference through complete (end-to-end) data analytics projects._|
 |**311 Service Requests Data Pipeline**<br>_A simple data pipeline for retrieving data for 311 service calls and storing them on a Postgresql database._|
+|**Natural Language Processing (NLP) with Tensorflow**<br>_In this repo, we explore some deep learning concepts using Tensorflow._|
