@@ -4,9 +4,9 @@
 311 Service Requests Data Pipeline
 -------------------------------
 
-This repository is a data pipeline of 311 Service Requests from 2010 to
-present. The information from `data.cityofnewyork.us` is updated daily.
-We would like to be able to obtain a daily update of this data and store
+This repository is a data pipeline of a snapshot of 311 Service Requests.
+The information from `data.cityofnewyork.us` is updated daily.
+We would like to be able to obtain a dailys snapshot of this data and store
 it in a local database for analysis.
 
 Workflow manager:
@@ -38,7 +38,7 @@ default_args = {
     'owner': 'wildlyclassyprince',
     'depends_on_past': False,
     'start_date': datetime(2019, 7, 21),
-    'email': ['lihtumb@gmail.com'],
+    'email': ['wildlyclassyprince@gmail.com'],
     'email_on_failure': True,
     'email_on_retry': False,
     'retries': 5,
