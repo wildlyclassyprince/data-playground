@@ -36,7 +36,7 @@ USECOLS = ['text', 'user']
 # Text corpus
 def create_document_corpus(df, column):
     '''Creates document corpus.'''
-    return [i for in df[column]]
+    return [i for i in df[column]]
 
 # Removing common words and tokenize
 def tokenise(document_corpus):
