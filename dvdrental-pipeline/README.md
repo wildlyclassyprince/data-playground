@@ -6,7 +6,7 @@ A pipeline to show the most popularly rented out movies. The data is taken from 
 ```bash
 $ cd dvdrental/
 $ wget https://jdbc.postgresql.org/download/postgresql-42.2.9.jar
-$ mv postgresql-42.2.9.jar pyspark-jars-location
+$ mv postgresql-42.2.9.jar ~/anaconda3/lib/site-packages/pyspark/jars
 $ pip install -r app/requirements
 ```
 
