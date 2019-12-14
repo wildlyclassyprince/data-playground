@@ -53,4 +53,5 @@ if __name__ == "__main__":
         .filter('count > 20') \
         .orderBy('count', ascending=False) \
         .withColumnRenamed('count', 'frequency') \
-        .show()
+        .toPandas() \
+        .to_csv('data/most-commonly-rented-movies.csv')
