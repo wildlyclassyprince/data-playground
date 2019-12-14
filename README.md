@@ -20,4 +20,4 @@ A portfolio of data science projects analysing open source data.
 |**311 Service Requests Data Pipeline**<br>_A simple data pipeline for retrieving data for 311 service calls and storing them on a Postgresql database._|
 |**Natural Language Processing (NLP) with Tensorflow**<br>_In this repo, we explore some deep learning concepts using Tensorflow._|
 |**Loan Prediction Challenge**<br>_In this project, we implement end-to-end data science, from exploration, feature engineering, feature selection, modeling, and optimisation._|
-
+|**DvD Rental Pipeline**<br>_A data pipeline to show the most populary rented out movies._|
