@@ -1,0 +1,7 @@
+md5: a801d3c3e941fecdab92ccd2fe80f557
+outs:
+- md5: 46801c2d4dce13e797bb54ffd72f42ca
+  path: most-commonly-rented-movies.csv
+  cache: true
+  metric: false
+  persist: false
