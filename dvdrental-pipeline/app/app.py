@@ -8,8 +8,10 @@ from pyspark.sql import SparkSession
 
 NAME = 'DvD Rental Pipeline'
 URL = 'jdbc:postgresql://localhost:5432/dvdrental'
-QUERY = '(select * from actor limit 10) as q1'
 CONF = '.config/config.json'
+QUERY1 = '(select * from film) as q1'
+QUERY2 = '(select * from inventory) as q2'
+QUERY3 = '(select * from rental) as q3'
 
 
 def config(file: str) -> dict:
@@ -24,14 +26,31 @@ def config(file: str) -> dict:
     return properties
 
 
-def main(properties: dict, url: str, query: str, name: str):
+def get_data(properties: dict, url: str, query: str, name: str):
     '''Run app.'''
     spark = SparkSession.builder.appName(name).getOrCreate()
-    df = spark.read.jdbc(url=url, table=query, properties=properties)
-    df.show()
-    df.printSchema()
+    return spark.read.jdbc(url=url, table=query, properties=properties)
 
 
 if __name__ == "__main__":
+    # Get the data
     properties = config(CONF)
-    main(properties, URL, QUERY, NAME)
+    fil = get_data(properties, URL, QUERY1, NAME)
+    inv = get_data(properties, URL, QUERY2, NAME)
+    ren = get_data(properties, URL, QUERY3, NAME)
+
+    # Join
+    right = fil \
+        .join(inv, fil.film_id == inv.film_id)\
+        .drop(inv.film_id)
+    df = right \
+        .join(ren, ren.inventory_id == right.inventory_id) \
+        .drop(ren.inventory_id)
+
+    # Group, filter, order and show
+    df.groupBy('title') \
+        .count() \
+        .filter('count > 20') \
+        .orderBy('count', ascending=False) \
+        .withColumnRenamed('count', 'frequency') \
+        .show()
