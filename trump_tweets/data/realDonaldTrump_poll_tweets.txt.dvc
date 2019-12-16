@@ -1,0 +1,7 @@
+md5: 755734f230602b683b3bac608f5e29f0
+outs:
+- md5: 8dfdf6d53e54068e96b4b345d02db647
+  path: realDonaldTrump_poll_tweets.txt
+  cache: true
+  metric: false
+  persist: false
