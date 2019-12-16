@@ -1,0 +1,7 @@
+md5: f725f269cfefd803fb07302d604f5b0d
+outs:
+- md5: 23b097d3f100929629e924e180e69c17
+  path: trump.lsi.projection
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: e5bba25fac347b7f270e729353782f08
+outs:
+- md5: 21c9354c609fd57cbc5b04320aefd422
+  path: trump.lsi
+  cache: true
+  metric: false
+  persist: false

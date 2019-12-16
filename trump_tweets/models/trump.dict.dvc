@@ -1,0 +1,7 @@
+md5: d0288aa095795c89d665104b5239e0fd
+outs:
+- md5: 7886af21cba1e41747a5e864f4300c35
+  path: trump.dict
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: 51cc56a6790e7bbe5b4dcf98872541a6
+outs:
+- md5: 96e98b7cab2918b8fc89d0a1eb5e70f7
+  path: trump.mm.index
+  cache: true
+  metric: false
+  persist: false
