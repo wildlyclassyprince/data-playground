@@ -1,4 +1,0 @@
-['remote "myremote"']
-url = /home/dorutan/Documents/datascience/data/dvc-storage/
-[core]
-remote = myremote
