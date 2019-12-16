@@ -1,0 +1,7 @@
+md5: 6470e4c84e78797cbde255e15d964cab
+outs:
+- md5: 51da951764ae42ce3b2c48af9690af1f
+  path: trainprevloans.csv
+  cache: true
+  metric: false
+  persist: false

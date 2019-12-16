@@ -1,0 +1,7 @@
+md5: f5bcd0b28f5a7b109904b72acc8fbeb2
+outs:
+- md5: 3fbe9743d21aeb1a43faf6fa1c98baf4
+  path: trainperf.csv
+  cache: true
+  metric: false
+  persist: false

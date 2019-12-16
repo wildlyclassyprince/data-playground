@@ -1,0 +1,7 @@
+md5: d1dc6d9424d2bbf201865757b72c30b2
+outs:
+- md5: f65c3d3b99a9a98d61e57094dbecbe32
+  path: features.txt
+  cache: true
+  metric: false
+  persist: false

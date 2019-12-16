@@ -1,0 +1,7 @@
+md5: 0c5a370e61dc2ded4703c65e889bdebb
+outs:
+- md5: 0160438a682141f4fb065a3629f29e52
+  path: testprevloans.csv
+  cache: true
+  metric: false
+  persist: false
