@@ -54,4 +54,4 @@ if __name__ == "__main__":
         .orderBy('count', ascending=False) \
         .withColumnRenamed('count', 'frequency') \
         .toPandas() \
-        .to_csv('data/most-commonly-rented-movies.csv')
+        .to_csv('../data/most-commonly-rented-movies.csv')
