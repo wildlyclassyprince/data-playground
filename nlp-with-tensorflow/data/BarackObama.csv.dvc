@@ -1,0 +1,7 @@
+md5: 77f2435521d5da846561ee022d609adb
+outs:
+- md5: 6b117372ba68e74e423220cd91465ba2
+  path: BarackObama.csv
+  cache: true
+  metric: false
+  persist: false

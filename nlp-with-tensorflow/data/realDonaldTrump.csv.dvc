@@ -1,0 +1,7 @@
+md5: 50c51c9d3d70a812f7d65cb933d90dd7
+outs:
+- md5: 0ff726b66f46aaddab6190e4edd0120a
+  path: realDonaldTrump.csv
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: 5bc1b65b90449db169714610730bd8b7
+outs:
+- md5: 04c394fc02daa2485361557bfcca54c2
+  path: senators.csv
+  cache: true
+  metric: false
+  persist: false
