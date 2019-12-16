@@ -1,0 +1,7 @@
+md5: f2e8669795dfa3968b3f22122043a5f4
+outs:
+- md5: 2a8f74e7058136d353111413e1f8c873
+  path: get_monthly_submissions_extracted_09-08-2018.csv
+  cache: true
+  metric: false
+  persist: false

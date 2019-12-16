@@ -1,0 +1,7 @@
+md5: c919b1c3c4425f3a057a43d2e340c663
+outs:
+- md5: 53734e42bf1933d205e09a971bf162e5
+  path: get_monthly_downloads_extracted_09-08-2018.csv
+  cache: true
+  metric: false
+  persist: false
